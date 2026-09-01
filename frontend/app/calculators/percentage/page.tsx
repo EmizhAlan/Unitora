@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import InnerLayout from "@/components/InnerLayout";
 
 export default function PercentageCalculator() {
   const [number, setNumber] = useState("");
@@ -12,17 +13,17 @@ export default function PercentageCalculator() {
       : "";
 
   return (
-    <main className="min-h-screen bg-slate-50 px-6 py-16">
+    <InnerLayout>
       <div className="mx-auto max-w-2xl">
-        <h1 className="text-4xl font-bold">
+        <h1 className="text-4xl font-bold tracking-tight">
           Калькулятор процентов
         </h1>
 
-        <p className="mt-4 text-slate-600">
+        <p className="mt-4 text-lg text-slate-600">
           Узнайте, сколько составляет процент от числа.
         </p>
 
-        <div className="mt-10 rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+        <div className="mt-8 rounded-3xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
           <label className="block text-sm font-medium">
             Число
           </label>
@@ -58,6 +59,6 @@ export default function PercentageCalculator() {
           </div>
         </div>
       </div>
-    </main>
+    </InnerLayout>
   );
 }

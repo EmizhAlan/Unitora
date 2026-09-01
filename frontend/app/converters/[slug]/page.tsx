@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 import Converter from "@/components/converters/Converter";
+import ConverterLayout from "@/components/ConverterLayout";
 import { converters } from "@/lib/converters";
 
 type PageProps = {
@@ -49,35 +50,8 @@ export default async function ConverterPage({
   }
 
   return (
-    <main className="min-h-screen bg-slate-50 text-slate-900">
-      <header className="border-b border-slate-200 bg-white">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
-          <a
-            href="/"
-            className="text-2xl font-bold tracking-tight"
-          >
-            Unitora
-          </a>
-
-          <nav className="hidden gap-8 text-sm text-slate-600 md:flex">
-            <a
-              href="/converters"
-              className="transition hover:text-slate-950"
-            >
-              Конвертеры
-            </a>
-
-            <a
-              href="/calculators"
-              className="transition hover:text-slate-950"
-            >
-              Калькуляторы
-            </a>
-          </nav>
-        </div>
-      </header>
-
-      <div className="mx-auto max-w-4xl px-6 py-12">
+    <ConverterLayout>
+      <div className="mx-auto max-w-4xl">
         <a
           href="/converters"
           className="text-sm font-medium text-blue-600 hover:text-blue-800"
@@ -119,6 +93,6 @@ export default async function ConverterPage({
           </span>
         </div>
       </div>
-    </main>
+    </ConverterLayout>
   );
 }

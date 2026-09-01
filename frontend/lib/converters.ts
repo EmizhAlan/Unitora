@@ -555,4 +555,241 @@ export const converters: ConverterConfig[] = [
     formula: "1 день = 24 часа",
     type: "factor",
   },
+
+  // ==========================================
+  // СКОРОСТЬ
+  // ==========================================
+
+  {
+    slug: "km-h-to-m-h",
+    title: "Км/ч в м/с",
+    description:
+      "Переведите километры в час в метры в секунду.",
+    category: "Скорость",
+    from: "Километры в час",
+    to: "Метры в секунду",
+    fromShort: "км/ч",
+    toShort: "м/с",
+    factor: 0.277778,
+    formula: "1 км/ч = 0.277778 м/с",
+    type: "factor",
+  },
+
+  {
+    slug: "m-h-to-km-h",
+    title: "Миль/ч в км/ч",
+    description:
+      "Переведите мили в час в километры в час.",
+    category: "Скорость",
+    from: "Мили в час",
+    to: "Километры в час",
+    fromShort: "миль/ч",
+    toShort: "км/ч",
+    factor: 1.609344,
+    formula: "1 миля/ч = 1.609344 км/ч",
+    type: "factor",
+  },
+
+  {
+    slug: "km-h-to-m-h",
+    title: "Км/ч в мили/ч",
+    description:
+      "Переведите километры в час в мили в час.",
+    category: "Скорость",
+    from: "Километры в час",
+    to: "Мили в час",
+    fromShort: "км/ч",
+    toShort: "миль/ч",
+    factor: 0.621371,
+    formula: "1 км/ч = 0.621371 миля/ч",
+    type: "factor",
+  },
+
+  {
+    slug: "knots-to-km-h",
+    title: "Узлы в км/ч",
+    description:
+      "Переведите узлы в километры в час.",
+    category: "Скорость",
+    from: "Узлы",
+    to: "Километры в час",
+    fromShort: "узлов",
+    toShort: "км/ч",
+    factor: 1.852,
+    formula: "1 узел = 1.852 км/ч",
+    type: "factor",
+  },
+
+  // ==========================================
+  // ПЛОЩАДЬ
+  // ==========================================
+
+  {
+    slug: "sq-m-to-sq-ft",
+    title: "Кв. метры в кв. футы",
+    description:
+      "Переведите квадратные метры в квадратные футы.",
+    category: "Площадь",
+    from: "Квадратные метры",
+    to: "Квадратные футы",
+    fromShort: "м²",
+    toShort: "футов²",
+    factor: 10.763910417,
+    formula: "1 м² = 10.763910417 футов²",
+    type: "factor",
+  },
+
+  {
+    slug: "sq-ft-to-sq-m",
+    title: "Кв. футы в кв. метры",
+    description:
+      "Переведите квадратные футы в квадратные метры.",
+    category: "Площадь",
+    from: "Квадратные футы",
+    to: "Квадратные метры",
+    fromShort: "футов²",
+    toShort: "м²",
+    factor: 0.092903,
+    formula: "1 фут² = 0.092903 м²",
+    type: "factor",
+  },
+
+  {
+    slug: "sq-m-to-sq-cm",
+    title: "Кв. метры в кв. сантиметры",
+    description:
+      "Переведите квадратные метры в квадратные сантиметры.",
+    category: "Площадь",
+    from: "Квадратные метры",
+    to: "Квадратные сантиметры",
+    fromShort: "м²",
+    toShort: "см²",
+    factor: 10000,
+    formula: "1 м² = 10 000 см²",
+    type: "factor",
+  },
+
+  {
+    slug: "hectares-to-sq-m",
+    title: "Гектары в кв. метры",
+    description:
+      "Переведите гектары в квадратные метры.",
+    category: "Площадь",
+    from: "Гектары",
+    to: "Квадратные метры",
+    fromShort: "га",
+    toShort: "м²",
+    factor: 10000,
+    formula: "1 га = 10 000 м²",
+    type: "factor",
+  },
+
+  {
+    slug: "sq-m-to-hectares",
+    title: "Кв. метры в гектары",
+    description:
+      "Переведите квадратные метры в гектары.",
+    category: "Площадь",
+    from: "Квадратные метры",
+    to: "Гектары",
+    fromShort: "м²",
+    toShort: "га",
+    factor: 0.0001,
+    formula: "1 м² = 0.0001 га",
+    type: "factor",
+  },
+
+  // ==========================================
+  // ДАННЫЕ
+  // ==========================================
+
+  {
+    slug: "bytes-to-kilobytes",
+    title: "Байты в килобайты",
+    description:
+      "Переведите байты в килобайты.",
+    category: "Данные",
+    from: "Байты",
+    to: "Килобайты",
+    fromShort: "Б",
+    toShort: "КБ",
+    factor: 0.000977,
+    formula: "1 КБ = 1024 Б",
+    type: "factor",
+  },
+
+  {
+    slug: "kilobytes-to-bytes",
+    title: "Килобайты в байты",
+    description:
+      "Переведите килобайты в байты.",
+    category: "Данные",
+    from: "Килобайты",
+    to: "Байты",
+    fromShort: "КБ",
+    toShort: "Б",
+    factor: 1024,
+    formula: "1 КБ = 1024 Б",
+    type: "factor",
+  },
+
+  {
+    slug: "megabytes-to-kilobytes",
+    title: "Мегабайты в килобайты",
+    description:
+      "Переведите мегабайты в килобайты.",
+    category: "Данные",
+    from: "Мегабайты",
+    to: "Килобайты",
+    fromShort: "МБ",
+    toShort: "КБ",
+    factor: 1024,
+    formula: "1 МБ = 1024 КБ",
+    type: "factor",
+  },
+
+  {
+    slug: "gigabytes-to-megabytes",
+    title: "Гигабайты в мегабайты",
+    description:
+      "Переведите гигабайты в мегабайты.",
+    category: "Данные",
+    from: "Гигабайты",
+    to: "Мегабайты",
+    fromShort: "ГБ",
+    toShort: "МБ",
+    factor: 1024,
+    formula: "1 ГБ = 1024 МБ",
+    type: "factor",
+  },
+
+  {
+    slug: "megabytes-to-gigabytes",
+    title: "Мегабайты в гигабайты",
+    description:
+      "Переведите мегабайты в гигабайты.",
+    category: "Данные",
+    from: "Мегабайты",
+    to: "Гигабайты",
+    fromShort: "МБ",
+    toShort: "ГБ",
+    factor: 0.000977,
+    formula: "1 ГБ = 1024 МБ",
+    type: "factor",
+  },
+
+  {
+    slug: "gigabytes-to-bytes",
+    title: "Гигабайты в байты",
+    description:
+      "Переведите гигабайты в байты.",
+    category: "Данные",
+    from: "Гигабайты",
+    to: "Байты",
+    fromShort: "ГБ",
+    toShort: "Б",
+    factor: 1073741824,
+    formula: "1 ГБ = 1 073 741 824 Б",
+    type: "factor",
+  },
 ];

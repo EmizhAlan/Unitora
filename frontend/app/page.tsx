@@ -1,4 +1,5 @@
 import HomeSearch from "@/components/home/HomeSearch";
+import YandexAd from "@/components/YandexAd";
 
 const popularConverters = [
   {
@@ -109,10 +110,8 @@ export default function Home() {
 
       {/* Ad placeholder */}
       <section className="px-6 pb-16">
-        <div className="mx-auto flex h-24 max-w-6xl items-center justify-center rounded-2xl border border-dashed border-slate-300 bg-white">
-          <span className="text-sm text-slate-400">
-            Рекламный блок
-          </span>
+        <div className="mx-auto max-w-6xl rounded-2xl bg-white">
+          <YandexAd />
         </div>
       </section>
 
